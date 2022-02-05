@@ -20,7 +20,7 @@
     when: ansible_distribution == 'RedHat'
   
   - name: i want start webserver on RedHat node 
-  service:
+    service:
      name: httpd
      state: started
     when: ansible_distribution == 'RedHat'
