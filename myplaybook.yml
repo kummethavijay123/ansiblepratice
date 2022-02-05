@@ -7,8 +7,20 @@
      name: apache2
      state: present
     when: ansible_distribution == 'Debian'
+
+  - name: i want start webserver on ubuntu node only
+    service:
+     name: apache2
+     state: started
+    when: ansible_distribution == 'Debian'
   - name: i want install webserver on RedHat node only
     yum:
      name: httpd
      state: present
+    when: ansible_distribution == 'RedHat'
+  
+  - name: i want start webserver on RedHat node only
+  service:
+     name: httpd
+     state: started
     when: ansible_distribution == 'RedHat'
