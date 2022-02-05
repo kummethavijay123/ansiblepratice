@@ -2,7 +2,12 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install webserver
+  - name: install git,tree,apache2
     apt:
-     name: apache2
+     name: "{{ item }}"
      state: present
+
+    loop:
+     - git
+     - tree
+     - apache2
