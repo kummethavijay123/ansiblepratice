@@ -1,10 +1,9 @@
 ---
 - hosts: all
   become: yes
-  task:
+  tasks:
   - name: i want install webserver on ubuntu only
     apt:
      name: apache2
      state: present
     when: ansible_distribution == 'Debian'
-    
