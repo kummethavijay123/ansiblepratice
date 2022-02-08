@@ -4,25 +4,25 @@
   tasks:
   - name: i want install webserver on ubuntu nodes
     apt:
-     name: "{{webserverpackforubuntu}}"
+     name: "{{mywebserverpackforubuntu}}"
      state: present
     when: ansible_os_family =="Debian"
 
   - name: i want start webserver on ubuntu node
     service:
-     name: "{{webserverpackforubuntu}}"
+     name: "{{mywebserverpackforubuntu}}"
      state: started
     when: ansible_os_family =="Debian"
 
 
   - name: i want install webserver on RedHat nodes
     yum:
-     name: "{{webserverpackforRedHat}}"
+     name: "{{mywebserverpackforRedHat}}"
      state: present
     when: ansible_os_family =="RedHat"
   
   - name: i want start webserver on RedHat node 
     service:
-     name: "{{webserverpackforRedHat}}"
+     name: "{{mywebserverpackforRedHat}}"
      state: started
     when: ansible_os_family =="RedHat"

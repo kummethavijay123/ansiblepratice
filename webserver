@@ -1,0 +1,5 @@
+---
+key: value
+
+mywebserverpackforubuntu: apache2
+mywebserverpackforRedHat: httpd
