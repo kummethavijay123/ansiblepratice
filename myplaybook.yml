@@ -2,26 +2,26 @@
 - hosts: webserver
   become: yes
   tasks:
-  - name: i want install webserver on only ubuntu nodes
+  - name: i want install web server on only ubuntu nodes
     apt:
       name: "{{mywebserverpackageforubuntu}}"
       state: present
     when: ansible_os_family =="Debian"
 
-  - name: i want start webserver on only ubuntu nodes
+  - name: i want start web server on only ubuntu nodes
     service:
       name: "{{mywebserverpackageforubuntu}}"
       state: started
     when: ansible_os_family =="Debian"
 
 
-  - name: i want install webserver on RedHat nodes
+  - name: i want install web server on RedHat nodes
     yum:
       name: "{{mywebserverpackageforRedHat}}"
       state: present
     when: ansible_os_family =="RedHat"
   
-  - name: i want start webserver on RedHat node 
+  - name: i want start web server on RedHat node 
     service:
       name: "{{mywebserverpackageforRedHat}}"
       state: started
