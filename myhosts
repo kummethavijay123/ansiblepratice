@@ -12,5 +12,5 @@
 
 
 [webserver:vars]
-webserverpackforubuntu=apache2
-webserverpackforRedHat=httpd
+webserverpackageforubuntu=apache2
+webserverpackageforRedHat=httpd
