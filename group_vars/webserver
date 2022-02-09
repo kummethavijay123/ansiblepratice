@@ -5,5 +5,3 @@ mywebserverpackforubuntu: apache22222222
 mywebserverpackforRedHat: httpd
 
 
-# javapackageforubuntu: openjdk-8-jre
-# javapackageforredhat: java-1.8.0-openjdk
