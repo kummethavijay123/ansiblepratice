@@ -1,9 +1,9 @@
 [webserver]
-35.87.81.138
-54.68.87.245
+54.189.185.70
+54.149.134.198
 
 
-[application server]
+[applicationserver]
 54.214.122.60
 172.31.54.176
 
@@ -12,5 +12,5 @@
 
 
 [webserver:vars]
-mywebserverpackageforubuntu= apache2
-mywebserverpackageforRedHat= httpd
+mywebserverpackageforubuntu=apache2
+mywebserverpackageforRedHat=httpd
